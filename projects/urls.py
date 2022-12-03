@@ -1,7 +1,9 @@
 from . import views
 from django.urls import path, include
+import debug_toolbar
 
 urlpatterns = [
+    path('__debug__', include(debug_toolbar.urls)),
     path('', views.ProjectListView.as_view(), name='Project_list'),
     path('project/create', views.ProjectCreateView.as_view(), name='Project_create'),
     path('project/edit/<int:pk>', views.ProjectUpdateView.as_view(), name='Project_update'),

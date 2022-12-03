@@ -13,6 +13,34 @@
 					<a class="nav-link active" aria-current="page" href="{% url 'Project_list' %}">Home</a>
 				</li>
 			</ul>
+			<form style="position:absolute; top:15px;right:15px;" method="GET" action="{% url 'Project_list' %}" class="d-flex our">
+				<div class="input-group">
+					<input type="text"
+						name="q"
+						class="form-control"
+						placeholder="{% trans 'Search' %}"
+						value="{{ request.GET.q }}"
+					>
+					<button class="btn btn-outline-light" type="submit">
+						<i class="bi bi-search"></i>
+					</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </nav>
+
+<script>
+	console.log(window)
+	if ((+window.innerWidth) <= 900) {
+			document.querySelector('.our').style.position = 'static';
+		}
+	window.addEventListener('resize', function(e) {
+		if((+window.innerWidth) <= 992 ) {
+			document.querySelector('.our').style.position = 'static'
+		}  else {
+			document.querySelector('.our').style.position = 'absolute'
+		}
+
+	})
+</script>
