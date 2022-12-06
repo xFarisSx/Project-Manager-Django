@@ -13,26 +13,43 @@
 					<a class="nav-link active" aria-current="page" href="{% url 'Project_list' %}">Home</a>
 				</li>
 			</ul>
-			<form style="position:absolute; top:15px;right:15px;" method="GET" action="{% url 'Project_list' %}" class="d-flex our">
-				<div class="input-group">
-					<input type="text"
-						name="q"
-						class="form-control"
-						placeholder="{% trans 'Search' %}"
-						value="{{ request.GET.q }}"
-					>
-					<button class="btn btn-outline-light" type="submit">
-						<i class="bi bi-search"></i>
-					</button>
-				</div>
-			</form>
+			{% if user.is_authenticated %}
+				<ul class="navbar-nav me-3 mb-2 mb-lg-0">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							{{user.username}}
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">{% trans 'Profile' %}</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
+							<li>
+						</ul>
+					</li>
+				</ul>
+				<form style="position:absolute; top:15px;right:15px;" method="GET" action="{% url 'Project_list' %}" class="d-flex our">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="{% trans 'Search' %}" value="{{ request.GET.q }}">
+						<button class="btn btn-outline-light" type="submit">
+							<i class="bi bi-search"></i>
+						</button>
+					</div>
+				</form>
+			{% else %}
+				<a href="{% url 'login' %}" class="btn btn-outline-light">
+					{% trans 'Login' %}
+				</a>
+			{% endif %}
+			
 		</div>
 	</div>
 </nav>
 
 <script>
 	console.log(window)
-	if ((+window.innerWidth) <= 900) {
+	if ((+window.innerWidth) <= 1000) {
 			document.querySelector('.our').style.position = 'static';
 		}
 	window.addEventListener('resize', function(e) {
