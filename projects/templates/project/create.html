@@ -12,6 +12,7 @@
 				<div class="card-body">
 					<form method="post">
 						{% csrf_token %}
+						<!-- <input type="hidden" value="{{user.id}}" name="user_id"> -->
 						{% include 'common/form.html' with form=form %}
 						<button class="btn btn-success">
 							{% trans 'Create' %}
