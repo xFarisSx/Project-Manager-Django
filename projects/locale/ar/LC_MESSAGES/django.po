@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-16 21:01+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\projects\templates\partials\footer.html:5
+msgid "(c) 2021 Hsoub. All rights reserved."
+msgstr ""
+
+#: .\projects\templates\partials\header.html:5
+msgid "Project Management"
+msgstr ""
+
+#: .\projects\templates\partials\header.html:23
+msgid "Profile"
+msgstr ""
+
+#: .\projects\templates\partials\header.html:27
+msgid "Logout"
+msgstr ""
+
+#: .\projects\templates\partials\header.html:34
+msgid "Search"
+msgstr ""
+
+#: .\projects\templates\partials\header.html:42
+msgid "Register"
+msgstr ""
+
+#: .\projects\templates\partials\header.html:45
+msgid "Login"
+msgstr ""
+
+#: .\projects\templates\project\create.html:10
+#: .\projects\templates\project\list.html:13
+#: .\projects\templates\project\list.html:53
+msgid "New Project"
+msgstr ""
+
+#: .\projects\templates\project\create.html:18
+msgid "Create"
+msgstr ""
+
+#: .\projects\templates\project\delete.html:6
+msgid "Alert"
+msgstr ""
+
+#: .\projects\templates\project\delete.html:10
+msgid "Are you sure to delete"
+msgstr ""
+
+#: .\projects\templates\project\delete.html:13
+#: .\projects\templates\project\update.html:44
+msgid "Delete"
+msgstr ""
+
+#: .\projects\templates\project\list.html:10
+msgid "My Projects"
+msgstr ""
+
+#: .\projects\templates\project\list.html:37
+msgid "Edit"
+msgstr ""
+
+#: .\projects\templates\project\list.html:48
+msgid "There are no projects"
+msgstr ""
+
+#: .\projects\templates\project\list.html:65
+#: .\projects\templates\project\list.html:69
+msgid "Previous"
+msgstr ""
+
+#: .\projects\templates\project\list.html:74
+#: .\projects\templates\project\list.html:78
+msgid "Next"
+msgstr ""
+
+#: .\projects\templates\project\task.html:34
+msgid "New Task"
+msgstr ""
+
+#: .\projects\templates\project\task.html:35
+msgid "Add"
+msgstr ""
+
+#: .\projects\templates\project\update.html:40
+msgid "Save"
+msgstr ""
