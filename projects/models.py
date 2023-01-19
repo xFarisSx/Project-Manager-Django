@@ -6,10 +6,16 @@ from django.utils.translation import gettext as _
 # Create your models here.
 
 class Category(models.Model):
-	name = models.CharField(max_length=255)
-  
-	def __str__(self):
-		return self.name
+    name = models.CharField(max_length=255)
+    class Meta: 
+        verbose_name = _('Category')
+        verbose_name_plural = _('Category')
+    def __str__(self):
+	    return self.name
+    
+	
+
+    
 
 class ProjectStatus(models.IntegerChoices):
     PENDING = 1,_( 'Pending')
@@ -31,6 +37,10 @@ class Project(models.Model):
     
     def __str__(self) :
         return self.title
+
+    class Meta:
+        verbose_name=_('Project')
+        verbose_name_plural=_('Projects')
     
 class Task(models.Model):
     description = models.TextField()
@@ -39,3 +49,7 @@ class Task(models.Model):
     
     def __str__(self): 
         return self.description
+
+    class Meta: 
+        verbose_name = _('Tasks')
+        verbose_name_plural = _('Tasks')

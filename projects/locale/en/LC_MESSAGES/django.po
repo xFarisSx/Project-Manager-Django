@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-16 21:18+0300\n"
+"POT-Creation-Date: 2023-01-19 20:40+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\projects\forms.py:12
+
+#: .\projects\forms.py:12 .\projects\models.py:11 .\projects\models.py:12
 msgid "Category"
 msgstr ""
 
@@ -29,20 +30,32 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: .\projects\models.py:15
+#: .\projects\models.py:21
 msgid "Pending"
 msgstr ""
 
-#: .\projects\models.py:16
+#: .\projects\models.py:22
 msgid "Completed"
 msgstr ""
 
-#: .\projects\models.py:17
+#: .\projects\models.py:23
 msgid "Postponed"
 msgstr ""
 
-#: .\projects\models.py:18
+#: .\projects\models.py:24
 msgid "Canceled"
+msgstr ""
+
+#: .\projects\models.py:42
+msgid "Project"
+msgstr ""
+
+#: .\projects\models.py:43
+msgid "Projects"
+msgstr ""
+
+#: .\projects\models.py:54 .\projects\models.py:55
+msgid "Tasks"
 msgstr ""
 
 #: .\projects\templates\partials\footer.html:5
